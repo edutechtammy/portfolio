@@ -1,8 +1,8 @@
-# 🎮 Filament Games — Portfolio & Studio Profile
+# 🎮 Just a Bit Moore — Portfolio & Studio Profile
 
-**Filament Games** is a premier, full-service digital studio specializing in the development of high-impact, award-winning educational games on a for-hire basis. Founded in 2005, the studio has successfully delivered over 400 projects that blend playful engagement with measurable learning outcomes.
+**Just a Bit Moore** is a premier, full-service digital studio specializing in educational content development.
 
-> *"We're educational game developers creating playful experiences that improve people's lives."*
+> *"I have been building online courses professionally since 2002."*
 
 ---
 
@@ -10,15 +10,15 @@
 
 We design and build experiences across several key digital learning frontiers:
 
-- **VR & Immersive Learning** — Leveraging spatial interaction and presence to support hands-on exploration and deep conceptual understanding.
-- **STEM & Digital Robotics** — Combining real engineering practices, academic research, and competitive gameplay.
-- **IP & Brand Partnerships** — Co-developing custom educational experiences alongside mission-driven organizations and top global brands.
+- **Instructional Design** — Immersive learning experiences that enable learners to understand complex concepts through game-based systems, simulations, and interactive design. I can build anything from a stand-alone interactive that you want to send students to or embed in your webpage or LMS up to a full Moodle or Canvas LMS course (even with CidiLabs).
+- **Visual Design** — Visual design that brings clarity to concepts across all visual design domains: static graphics, animations, 3D, and interactive visual content.
+- **Web Design** — Bringing HTML5 content to life so your content shines. I am familiar with several libraries and frameworks.
 
 ---
 
 ## 🛠️ Full-Service Game Development
 
-We handle every stage of the game creation pipeline in-house:
+I handle every stage of the educational content creation pipeline:
 
 | Category | Specializations |
 |---|---|
