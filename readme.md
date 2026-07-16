@@ -8,7 +8,7 @@
 
 ## 🚀 Core Expertise
 
-We design and build experiences across several key digital learning frontiers:
+I design and build experiences across several key digital learning frontiers:
 
 - **Instructional Design** — Immersive learning experiences that enable learners to understand complex concepts through game-based systems, simulations, and interactive design. I can build anything from a stand-alone interactive that you want to send students to or embed in your webpage or LMS up to a full Moodle or Canvas LMS course (even with CidiLabs).
 - **Visual Design** — Visual design that brings clarity to concepts across all visual design domains: static graphics, animations, 3D, and interactive visual content.
