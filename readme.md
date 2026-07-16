@@ -1,6 +1,6 @@
 # 🎮 Just a Bit Moore — Portfolio & Studio Profile
 
-**Just a Bit Moore** is a premier, full-service digital studio specializing in educational content development.
+**EduTech Tammy** is a premier, full-service digital studio specializing in educational content development.
 
 > *"I have been building online courses professionally since 2002."*
 
