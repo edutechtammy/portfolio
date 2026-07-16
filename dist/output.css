@@ -898,6 +898,11 @@
       text-align: left;
     }
   }
+  .md\:text-right {
+    @media (width >= 48rem) {
+      text-align: right;
+    }
+  }
   .md\:text-8xl {
     @media (width >= 48rem) {
       font-size: var(--text-8xl);
