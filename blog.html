@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Link to your compiled Tailwind CSS -->
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased font-sans">
+
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo / Brand -->
+                <a href="index.html" class="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200">
+                    <!-- Squiggle Icon (A nod to Filament's logo) -->
+                    <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center font-bold text-white text-xl">
+                    ~
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white uppercase leading-tight">
+                        EduTech<span class="text-orange-500">Tammy</span>
+                        </span>
+                        <span class="text-xs text-slate-400 tracking-wide">
+                        Immersive Learning Designer
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                    <a href="portfolio.html" class="text-slate-300 hover:text-white transition-colors">Portfolio</a>
+                    <a href="services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
+                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors">About</a>
+                    <a href="content-hub.html" class="text-orange-500 hover:text-orange-400 transition-colors">Content-Hub</a>
+                    <a href="contact.html" class="text-orange-500 hover:text-orange-400 transition-colors">Contact</a>
+                    
+                    <!-- CTA Button -->
+                    <a href="contact.html" class="bg-orange-600 hover:bg-orange-500 text-white px-5 py-2.5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20">
+                        Start a project
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button (Keep it visual for now; you can add JS logic later) -->
+                <div class="md:hidden">
+                    <button class="text-slate-400 hover:text-white focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>    
+        </div>   
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Intro Hero Block -->
+    <section class="mb-16 max-w-3xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-[#0f172a] tracking-tight mb-4">
+        Game-Based Learning Review
+      </h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Welcome to the showcase! Each week, we examine how educational games are designed, evaluated, and deployed in real learning contexts.
+      </p>
+    </section>
+
+    <!-- Search / Filter Placeholder Block (Inspired by the bright orange/white design) -->
+    <section class="bg-[#e14d2a] rounded-3xl p-8 mb-12 shadow-lg">
+      <h2 class="text-white text-xl font-bold mb-4">Search articles, videos and topics</h2>
+      <div class="relative">
+        <input type="text" placeholder="Search articles, videos, and topics..." class="w-full bg-white text-gray-800 placeholder-gray-400 rounded-full py-4 px-6 focus:outline-none shadow-inner" />
+      </div>
+    </section>
+
+    <!-- Content Grid Section -->
+    <section>
+      <h2 class="text-2xl font-extrabold text-[#0f172a] mb-8">Latest Articles</h2>
+      
+      <!-- Responsive Tailwind Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Article Layout -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
+          <!-- Card Thumbnail Area (Using a stylized background instead of an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            <img 
+                src="path-to-your-image.jpg" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!-- Card Body -->
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
+              <span>Brandon Pittser</span>
+              <span>•</span>
+              <span>July 15, 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
+              Using Serious Games to Combat Climate Anxiety in the Classroom
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
+              See how four recent studies show game-based learning easing student burnout, lifting knowledge retention by 33%, and turning heavy topics into engagement.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Video Layout -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
+        
+        <!-- Media Container Header Area -->
+        <div class="h-48 bg-gradient-to-br from-orange-400 to-red-400 relative flex items-center justify-center overflow-hidden">
+            
+            <!-- 1. The Video Element (Takes up full space) -->
+            <video 
+            src="path-to-your-video.mp4" 
+            muted 
+            loop 
+            playsinline
+            class="w-full h-full object-cover">
+            </video>
+
+            <!-- 2. The Text Tag/Badge (Sits elegantly in the top-left corner) -->
+            <span class="absolute top-6 left-6 bg-white text-red-600 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-md shadow-sm z-10">
+            Video
+            </span>
+            
+            <!-- 3. Play Button Icon Overlay (Centers directly over the video) -->
+            <div class="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center border border-white/50">
+                <span class="text-white ml-0.5 text-sm">▶</span>
+            </div>
+            </div>
+
+        </div> <!-- <-- This closes the thumbnail div properly! -->
+
+        <!-- Card Body Text Area -->
+        <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
+            <span>Dan & Brandon</span>
+            <span>•</span>
+            <span>July 14, 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
+            The Game-based Learning Review (Live!) - Playing iCivics.org's Award-winning App
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
+            In this episode, hosts dive into formal learning games to commemorate recent design achievements and player feedback patterns.
+            </p>
+        </div>
+        </article>
+
+        <!-- Card 3: Another Article Layout - From the original code -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
+          <div class="h-48 bg-gradient-to-br from-cyan-300 to-teal-400 p-6 relative">
+            <span class="absolute top-6 left-6 bg-white text-teal-700 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-md shadow-sm">
+              Article
+            </span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
+              <span>Brandon Pittser</span>
+              <span>•</span>
+              <span>July 13, 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
+              Beyond the Forecast: Using Simulation Games to Build Climate Literacy
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
+              See how climate simulation games build negotiation, literacy, and systems-thinking skills, plus what three recent studies reveal for educational design.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                        <!-- Left Side: Brand/Tagline -->
+                        <div class="text-center md:text-left">
+                            <p class="text-lg font-bold text-white">Let's build something together.</p>
+                            <p class="text-sm text-slate-400 mt-1">Available for instructional design, development, and consulting contracts.</p>
+                        </div>
+
+                        <!-- Right Side: Action Links -->
+                        <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-400">
+                            <a href="mailto:teacher.tammy.moore@gmail.com" class="hover:text-orange-500 transition-colors">Email Me</a>
+                            <a href="https://www.linkedin.com/in/tammy-moore-50733354/" class="hover:text-orange-500 transition-colors">LinkedIn</a>
+                            <a href="https://profile.indeed.com/p/tammym-xmvoxc6" class="hover:text-orange-500 transition-colors">Indeed</a>
+                            <a href="https://github.com/edutechtammy" class="hover:text-orange-500 transition-colors">GitHub</a>
+                            <a href="#" class="hover:text-orange-500 transition-colors">Resume</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom Copyright / Transition Link -->
+                    <div class="mt-8 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                        <p>&copy; 2026 Tammy Moore. All rights reserved.</p>
+                        <p class="hover:text-slate-400 transition-colors">Built with HTML & Tailwind CSS</p>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+</html>
