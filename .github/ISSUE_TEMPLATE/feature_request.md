@@ -1,4 +1,3 @@
----
 name: Feature Request
 description: Propose a new feature or layout block
 title: "[FEATURE] "
