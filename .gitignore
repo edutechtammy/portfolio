@@ -6,3 +6,6 @@ tailwindcss
 
 # Build output (optional - remove if you want to commit compiled CSS)
 # dist/
+
+# Local research and resources
+0-research/

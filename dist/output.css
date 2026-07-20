@@ -391,11 +391,23 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-62 {
+    height: calc(var(--spacing) * 62);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-642 {
+    height: calc(var(--spacing) * 642);
+  }
   .h-full {
     height: 100%;
   }
   .min-h-\[75wh\] {
     min-height: 75wh;
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -411,6 +423,9 @@
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
   }
   .w-full {
     width: 100%;
@@ -583,6 +598,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
+  }
+  .bg-\[\#0099ff\] {
+    background-color: #0099ff;
   }
   .bg-\[\#e14d2a\] {
     background-color: #e14d2a;
@@ -883,6 +901,9 @@
   }
   .text-\[\#0f172a\] {
     color: #0f172a;
+  }
+  .text-\[\#0099ff\] {
+    color: #0099ff;
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -1305,6 +1326,11 @@
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:grid-cols-4 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .xl\:grid-cols-6 {
