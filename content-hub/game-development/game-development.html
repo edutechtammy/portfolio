@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development</title>
+    <!-- Link to your compiled Tailwind CSS -->
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased font-sans">
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo / Brand -->
+                <a href="../../index.html" class="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200">
+                    <!-- Squiggle Icon (A nod to Filament's logo) -->
+                    <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center font-bold text-white text-xl">
+                    ~
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white uppercase leading-tight">
+                        EduTech<span class="text-orange-500">Tammy</span>
+                        </span>
+                        <span class="text-xs text-slate-400 tracking-wide">
+                        Immersive Learning Designer
+                        </span>
+                    </div>
+                </a>
+
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                    <a href="../../portfolio.html" class="text-slate-300 hover:text-white transition-colors">Portfolio</a>
+                    <a href="../../services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
+                    <a href="../../about.html" class="text-orange-500 hover:text-orange-400 transition-colors">About</a>
+                    <a href="../../content-hub.html"  class="text-slate-300 hover:text-white transition-colors">Content-Hub</a>
+                    <a href="../../contact.html" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+                    
+                    <!-- CTA Button -->
+                    <a href="../../contact.html" class="bg-orange-600 hover:bg-orange-500 text-white px-5 py-2.5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20">
+                        Start a project
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button (Keep it visual for now; you can add JS logic later) -->
+                <div class="md:hidden">
+                    <button class="text-slate-400 hover:text-white focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>    
+        </div>   
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100 text-[#0f172a]">
+            <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc]">
+                <h1 class=" text-black text-4xl md:text-5xl font-extraboldtracking-tight mb-4">
+                Baby Steps in Game Development: Discovery-Only, Alpha Release, Prototype, or MVP?
+                </h1>
+                
+                <p>For the past 18 years, we’ve been refining our abilities, expertise, and Agile approach to game development, consistently delivering captivating and high-quality games while adhering to deadlines and budgets. But how do we do it? Here’s an overview of our methodology.</p>
+                <p>To start, the graphic below shows a timeline of our comprehensive production process. Please note that the graphic shows an example and that the number of sprints in a given release may vary due to the distinct scope of each project.</p>
+                <div class="flex justify-center items-center p-10">
+                    <img 
+                        src="assets/scrum/0-scrum.png" 
+                        alt="Blog post cover" 
+                    />
+                </div>
+                <p>Now that you’ve seen an overview, let’s cover each phase of a project in more detail!</p>
+
+                
+            
+                <h2>Initiation</h2>
+                <p>Production and Project Management Team</p>
+                <p>We initiate each project with a 2-day kickoff period, bringing together all stakeholders to establish a solid foundation for our collaboration. During this kickoff, we leverage your specialized knowledge, your business model, and your grasp of your target audience to enhance the implementation of our effective game development practices. Furthermore, this period allows for discussions on the technical strategy and the refinement of team interaction preferences.</p>
+                <div class="flex justify-center items-center p-10">
+                <img 
+                    src="assets/scrum/sprints/01-initiation-sprint/01-initiation.png" 
+                    alt="Design Document Icon" 
+                     class="w-48 h-auto"
+                />
+                </div>
+                <p>At the contract level, we will document a specific set of Release Criteria; the mutually agreed-upon conditions needed for a Release to be Accepted. The formal Acceptance process for each Release will be detailed in each Statement of Work and will be facilitated using Jira, an industry-leading online project management and collaboration tool that allows us to document and track all Release Criteria and development tasks. Clients have access to Jira during implementation so that they have up-to-the-minute insight into our progress at all times. We’ll formally meet every two weeks for a Sprint review, during which we’ll discuss progress to date. Our teams are also available for adhoc meetings and communications on a daily basis. See below for details on the capabilities we use most in Jira as well as information about how we use the information generated by Jira to manage each project.</p>
+                <h3>Statement of Work (SOW)</h3>
+                <p>Text</p>
+                <h3>Design Document (DD)</h3>
+                <p>Text</p>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <img 
+                        src="assets/scrum/design-document.png" 
+                        alt="Design Document Icon" class="w-48 h-auto"
+                    />
+                    <div>
+                        <p>The Design Document is a central reference roadmap rather than a lengthy detailed document. It is used to track specific features and establish a shared vision between the development team and client.</p>
+                    </div>
+                </div>
+                <p><b>Core Concept & Vision</b>: A high-level description of what the player will do and the project's primary objectives.</p>
+                <p><b>Design Pillars</b>: Three to five fundamental design goals that guide all subsequent development choices.</p>
+                <p><b>Learning Objectives</b>: In educational games, this outlines the exact skills or knowledge the player should take away.</p>
+                <p><b>Main Mechanics & Controls</b>: Details on core player actions, how to perform them, and the resulting in-game feedback.</p>
+                <p><b>Art & Audio Style</b>: Early visual and audio concepts, often paired with accompanying concept art and wireframes.</p>
+                <p><b>Basic Story Outline</b>: A summary of the narrative (if applicable to the specific project).</p>
+                <p><b>Production Plan</b>: Basic budget outlines and timeframes for development.</p>
+                <h3>The Development Process - Sprints</h3>
+                <p>Upon entering the development phase, we operate within 2-week sprints, grouped into 3 releases: Alpha, Beta, and Gold. Biweekly, formal video conferences are held with clients to assess progress over the last fortnight and strategize for the upcoming sprint. In addition to these structured meetings, our team members and clients engage in frequent ad-hoc communication.</p>
+
+                <p>By the time we reach the Alpha stage, our goal is to present a rudimentary playable version showcasing the primary game features. This phase involves internal playtesting with our team, assessment by the client's group, and input from user testers within the target demographic. Given its early developmental status, the Alpha playtest often identifies areas for enhancement. We swiftly work on these areas to integrate the feedback into future sprints.</p>
+
+                <p>Advancing to the Beta stage, we aim to introduce a playable version of all game features, incorporating adjustments from the Alpha playtest. This stage is pivotal in validating the effectiveness of the changes for the intended learners. Nevertheless, sprints are allocated after the Beta playtest to facilitate further enhancements prior to the final release.</p>
+
+                <p>The Gold Release marks the public launch of the game. Depending on the intended platform, we deploy the game accordingly (e.g., embedding it on a chosen website or submitting it to platforms like the App Store or Google Play). We provide a standard 30-day warranty post-deployment for all our projects.</p>
+
+                <p>With a refined Agile approach, our methodology ensures efficient and impactful production. From the initial project kickoff to the Gold Release, each phase is intricately designed to foster collaboration, innovation, and responsiveness. If you’re interested in working with us to create an educational game, let us know! We want to hear from you. </p>
+                <h3>Backlog Refinement Meeting</h3>
+                <img 
+                    src="assets/scrum/meetings/01-backlog-refinement.png" 
+                    alt="Design Document Icon" 
+                />
+                <p>Text</p>
+
+                <h2>Design Discovery - Design Sprints</h2>
+                <div class="flex justify-center items-center p-10">
+                    <img 
+                    src="assets/scrum/sprints/02-design-sprint/01-design-discovery.png" 
+                    alt="Design Document Icon" 
+                    />
+                </div>
+                <p>You can think of the Design Sprint as being four active areas: Game Design, Art Spike, Wireframing, and Architecture Spike.</p>
+                <div class="flex justify-center items-center p-10">
+                    <img src="assets/scrum/sprints/02-design-sprint/02-design-sprint.png" alt="Design Sprint" class="w-48 h-auto">
+                </div>
+                <p>Building upon the brainstorming and exchanges from the initiation phase, our focus shifts towards deepening our comprehension of the project. Through collaborative efforts, we craft essential materials such as a game design document, wireframes, concept art, and a production plan. These elements contribute to the creation of a shared vision for the product.</p>
+                <h3>Game Design</h3>
+                <p>Text</p>
+                <h3>Art Spike</h3>
+                <p>Text</p>
+                <h3>Wireframing</h3>
+                <p>PLACE FOR EXAMPLE WIREFRAME</p>
+                <p>To bridge text concepts and production, Filament Games pairs their Game Design Document (GDD) with a separate, visual wireframe pipeline. We keep wireframes out of the main GDD text, using them instead as a sequential mockup deck to map user experience before writing any code. By using wireframes, we avoid issues such as a game artist creates grpahics only to find out that they needed to be broken up into parts to facilitate animation. A developer builds out a feature only to find that the feature was intended to work in a different way.</p>
+                <p>The "Two-Headed" Approach: They structure pre-production into two distinct documents: the GDD (focusing on rules, mechanics, and learning data) and the Wireframe Deck (focusing on layout, UI hierarchy, and user flow).</p>
+                <p>Click-Through Narrative: They build wireframes to read like a book or a slideshow. A developer should be able to click through the deck to experience the exact, logical sequence a player goes through from the title screen to the core gameplay.</p>
+                <p>Low-Fidelity Focus: Filament intentionally keeps wireframes simple, utilizing basic shapes, gray boxes, and temporary fonts. They stress that avoiding polished art during this stage prevents stakeholders from getting distracted by aesthetics rather than focusing on layout and functional flow.</p>
+                <h4>Core Components in a Wireframe</h4>
+                <p>Every screen modeled in a wireframe deck requires specific structural elements to be useful for engineers and artists:</p>
+                <p><b>Layout Blocks</b>: Boxes that dictate the exact hierarchy and placement of UI elements, buttons, and instructional text areas.</p>
+                <p><b>Visual Placeholders</b>: Rough sketches or boxes indicating where gameplay feedback, timers, scores, or pedagogical meters will live.</p>
+                <p><b>Callout Labels</b>: Numbered circles or markers placed directly over UI elements to link the visual component to an explanatory note.</p>
+                <p><b>Functional Annotations</b>: A dedicated sidebar or bottom panel detailing exactly what happens when a user clicks a specific button (e.g., "Launches reward animation," "Saves state and routes to Level 2").</p>
+                
+                <h3>Architecture</h3>
+                <p>Text</p>
+                <p>------------------------------------</p>
+                <p><b>Focus Area:</b> How the game actually plays, rules/systems design, and aligning gameplay with educational objectives.</p>
+                <b>Key Responsibilities:</b>
+                <ul class="list-disc list-inside space-y-2 pl-5">
+                    <li>Creating intuitive, polished user interfaces (UI) and artistic visual assets.</li>
+                    <li>Designing wireframes, navigation flows, and user experiences (UX) across extended reality (XR) or web platforms.</li>
+                    <li>Ensuring visual aesthetics are clean, engaging, and aligned with brand or project goals.</li>
+                </ul>
+        
+                <h2>Game Designer Team</h2>
+                <p>This role focuses on gameplay mechanics, systems, learning design, and core interactive concepts. Game Designers build the rules, systems, and mechanics of how the game plays and teaches.</p>
+                <p><b>Focus Area:</b> How the game or interactive software looks, feels, and navigates.</p>
+                <b>Key Responsibilities:</b>
+                <ul class="list-disc list-inside space-y-2 pl-5">
+                    <li>Designing game mechanics, systems, rules, and world-building.</li>
+                    <li>Blending educational subject matter into playful, engaging core gameplay.</li>
+                    <li>Deconstructing and mashing up game genres to match client needs and learning goals.</li>
+                </ul>
+        
+                <h2>Game Art (Illustration and 3D Modeling) Team</h2>
+                <p>The illustration team is used as a flexible resource across all projects. They are allocated to apply their breadth of styles and skill sets to each project in the studio as illustration demands rise and fall. Our game art team is broadly versed in all modes and styles of digital art, from retro pixel art to custom fully-rigged 3D models. With thoughtful considerations towards tone, mood, age range, and subject matter accuracy, our illustrators and 3D artists work diligently to ensure a pleasing aesthetic experience that suits your content, audience and budget.</p>
+
+                <h2>Web Development Team</h2>
+                <p>Filament’s web development team specializes in taking your project online. Composed of experts in graphic design, front end web design, and back end web development and infrastructure, this team works flexibly across browsers and platforms to create a web experience that is elegant, usable, and intuitive. We work primarily in Wordpress and Drupal, and are versed in front end frameworks including Angular, React, and Vue, as well as front end languages including Typescript, and Javascript. For back end web work, we specialize in FastAPI, Flask, Django, PHP, Node, and Javascript. Our web development team has a long track record of shipping web-based projects that support the educational and impact goals of our clients. Because we staff back end, front end, and graphic design specialists, our clients benefit from end-to-end web development services that can cover everything from nuts-and-bolts SQL database implementation to flashy, graphics-rich progressive web apps. Fluent in mobile and browser technologies, our web team can also work in tandem with our game developers to create and integrate the web-based components of your game project.</p>
+
+                <h2>Sound Team</h2>
+                <p>Our Sound team provides custom voice acting, narration, sound effects, and soundtrack compositions. This team also provides video production support for deliverables like in-game cinematics and promotional trailers. Filament provides comprehensive sound design and sound effect services. We produce songs in a vast variety of styles to fit the aesthetic of any game. Clients benefit from this capability by receiving wholly-owned custom content that does not require any third-party rights management.</p>
+      
+                <h2>Team Members</h2>
+            
+            </section>
+        </article>
+    </main>
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                        <!-- Left Side: Brand/Tagline -->
+                        <div class="text-center md:text-left">
+                            <p class="text-lg font-bold text-white">Let's build something together.</p>
+                            <p class="text-sm text-slate-400 mt-1">Available for instructional design, development, and consulting contracts.</p>
+                        </div>
+
+                        <!-- Right Side: Action Links -->
+                        <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-400">
+                            <a href="mailto:teacher.tammy.moore@gmail.com" class="hover:text-orange-500 transition-colors">Email Me</a>
+                            <a href="https://www.linkedin.com/in/tammy-moore-50733354/" class="hover:text-orange-500 transition-colors">LinkedIn</a>
+                            <a href="https://profile.indeed.com/p/tammym-xmvoxc6" class="hover:text-orange-500 transition-colors">Indeed</a>
+                            <a href="https://github.com/edutechtammy" class="hover:text-orange-500 transition-colors">GitHub</a>
+                            <a href="#" class="hover:text-orange-500 transition-colors">Resume</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom Copyright / Transition Link -->
+                    <div class="mt-8 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                        <p>&copy; 2026 Tammy Moore. All rights reserved.</p>
+                        <p class="hover:text-slate-400 transition-colors">Built with HTML & Tailwind CSS</p>
+                    </div>
+                </div>
+            </footer>
+</body>
