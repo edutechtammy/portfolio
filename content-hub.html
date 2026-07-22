@@ -58,10 +58,10 @@
     <main class="max-w-7xl mx-auto px-6 py-12">
     <!-- Intro Hero Block -->
     <section class="mb-16 max-w-3xl">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-[#0f172a] tracking-tight mb-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-300 tracking-tight mb-4">
         Game-Based Learning Review
       </h1>
-      <p class="text-lg text-gray-600 leading-relaxed">
+      <p class="text-lg text-slate-300 leading-relaxed">
         Welcome to the showcase! Each week, we examine how educational games are designed, evaluated, and deployed in real learning contexts.
       </p>
     </section>
@@ -72,17 +72,75 @@
       <div class="relative">
         <input type="text" placeholder="Search articles, videos, and topics..." class="w-full bg-white text-gray-800 placeholder-gray-400 rounded-full py-4 px-6 focus:outline-none shadow-inner" />
       </div>
+      <!-- Top Left Badge -->
+                            <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full text-slate-300">
+                                Featured
+                            </span>
     </section>
 
     <!-- Content Grid Section -->
     <section>
-      <h2 class="text-2xl font-extrabold text-[#0f172a] mb-8">Latest Articles</h2>
+      <h2 class="text-2xl font-extrabold text-slate-300 mb-8">Latest Articles</h2>
       
       <!-- Responsive Tailwind Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Game Development by Tammy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <article class="project-card group">
+          <!-- Simulated Game Thumbnail / Image Container -->
+            <div class="aspect-video relative overflow-hidden flex items-center justify-center">
+              <img 
+                src="assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+              <!-- Top Left Badge -->
+              <span class="absolute top-4 left-4 bg-slate-800 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full text-slate-200">
+              Featured
+              </span>
+            </div>
+
+            <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/tammy-moore/tammy.png" 
+                      alt="Tammy Moore"
+                    />
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Tammy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              Game Development
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Peer into the process we do to work with clients and our internal team members to create a game.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
         
-        <!-- Card 1: Article Layout -->
-        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Timothy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
           
           <!-- Card Thumbnail Area (Using an image) -->
           <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
@@ -93,23 +151,33 @@
                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
         </div>
-          <!-- Card Body -->
-          <div class="p-6 flex flex-col flex-grow">
-            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
-              
-              <span>Tammy Moore</span>
-              <span>•</span>
-              <span>July 21, 2026</span>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/timothy-moore/timothy.png" 
+                      alt="Timothy Moore"
+                    />
+                  </div>
+                <div>
             </div>
-            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
-              Game Development
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Timothy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              Interaction Design
             </h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
-              Baby Steps in Game Development: Discovery-Only, Alpha Release, Prototype, or MVP?
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              What makes a game, course, or webpage engaging is the interaction between the user and the content. In this article, you will learn how we approach interaction design.
             </p>
-            <!-- Read Article Link -->
-            <div class="mt-8 pt-6 border-t border-slate-800/60 ">
-              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#0f172a] hover:text-orange-400 transition-colors">
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
                 Read Article 
               <span class="transition-transform group-hover:translate-x-1">→</span>
               </a>
@@ -117,80 +185,191 @@
           </div>
         </article>
 
-        <!-- Card 2: Video Layout -->
-        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-        
-        <!-- Media Container Header Area -->
-        <div class="h-48 bg-gradient-to-br from-orange-400 to-red-400 relative flex items-center justify-center overflow-hidden">
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Zachary Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
             
-            <!-- 1. The Video Element (Takes up full space) -->
-            <video 
-            src="path-to-your-video.mp4" 
-            muted 
-            loop 
-            playsinline
-            class="w-full h-full object-cover">
-            </video>
-
-            <!-- 2. The Text Tag/Badge (Sits elegantly in the top-left corner) -->
-            <span class="absolute top-6 left-6 bg-white text-red-600 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-md shadow-sm z-10">
-            Video
-            </span>
-            
-            <!-- 3. Play Button Icon Overlay (Centers directly over the video) -->
-            <div class="absolute inset-0 bg-black/20 flex items-center justify-center pointer-events-none">
-            <div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center border border-white/50">
-                <span class="text-white ml-0.5 text-sm">▶</span>
-            </div>
-            </div>
-
-        </div> <!-- <-- This closes the thumbnail div properly! -->
-
-        <!-- Card Body Text Area -->
-        <div class="p-6 flex flex-col flex-grow">
-            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
-            <span>Dan & Brandon</span>
-            <span>•</span>
-            <span>July 14, 2026</span>
-            </div>
-            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
-            The Game-based Learning Review (Live!) - Playing iCivics.org's Award-winning App
-            </h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
-            In this episode, hosts dive into formal learning games to commemorate recent design achievements and player feedback patterns.
-            </p>
-            <!-- Read Article Link -->
-            <div class="mt-8 pt-6 border-t border-slate-800/60 ">
-              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#0f172a] hover:text-orange-400 transition-colors">
-                Read Article 
-              <span class="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-            </div>
+            <img 
+                src="assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
         </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/zachary-moore/zachary.png" 
+                      alt="Zachary Moore"
+                    />
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Zachary Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              Learning Game Design
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              To make a game something more than just entertainment, the learning objectives need to be woven into the game mechanics.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
         </article>
 
-        <!-- Card 3: Another Article Layout - From the original code -->
-        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-          <div class="h-48 bg-gradient-to-br from-cyan-300 to-teal-400 p-6 relative">
-            <span class="absolute top-6 left-6 bg-white text-teal-700 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-md shadow-sm">
-              Article
-            </span>
-          </div>
-          <div class="p-6 flex flex-col flex-grow">
-            <div class="flex items-center space-x-2 text-xs text-gray-400 font-semibold mb-3">
-              <span>Brandon Pittser</span>
-              <span>•</span>
-              <span>July 13, 2026</span>
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Timothy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/melody-moore/melody.png" 
+                      alt="Timothy Moore"
+                    />
+                  </div>
+                <div>
             </div>
-            <h3 class="text-xl font-bold text-[#0f172a] mb-3 hover:text-[#e14d2a] transition-colors duration-200 line-clamp-2">
-              Beyond the Forecast: Using Simulation Games to Build Climate Literacy
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Timothy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              Q&A - Play Testing
             </h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
-              See how climate simulation games build negotiation, literacy, and systems-thinking skills, plus what three recent studies reveal for educational design.
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Quality testing involves testing the game play on multiple devices.
             </p>
-            <!-- Read Article Link -->
-            <div class="mt-8 pt-6 border-t border-slate-800/60 ">
-              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#0f172a] hover:text-orange-400 transition-colors">
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Gregory Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/gregory-moore/gregory.png" 
+                      alt="Gregory Moore"
+                    />
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Gregory Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              VR Games
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              VR games is as close to being there as you can get.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Gregory Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="max-w-25">
+                    <img 
+                      src="team-members/john-moore/john.png" 
+                      alt="John Moore"
+                    />
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Gregory Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3>
+              Captain of the Ship
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Where is the organization heading.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
                 Read Article 
               <span class="transition-transform group-hover:translate-x-1">→</span>
               </a>
@@ -200,6 +379,7 @@
 
       </div>
     </section>
+      
   </main>
 
     <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">

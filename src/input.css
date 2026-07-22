@@ -36,6 +36,6 @@
 @layer components {
   .project-card {
     /* Notice "group" has been completely removed from this line */
-    @apply flex flex-col bg-slate-900/40 rounded-3xl overflow-hidden border border-slate-800/80 hover:border-slate-700 transition-all duration-300;
+    @apply flex flex-col bg-slate-800 rounded-3xl overflow-hidden border  border-slate-500 hover:border-slate-700 transition-all duration-300;
   }
 }
