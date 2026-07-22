@@ -3,6 +3,14 @@
 
 @layer base {
 
+    
+    /* -------------------------------------------------------------------------
+                         GLOBAL BASE Body tag class
+     ------------------------------------------------------------------------- */
+    body {
+    @apply bg-slate-900 text-slate-100 antialiased font-sans;
+  }
+    
     /* ==========================================================================
                           Global Base Typography
     ========================================================================== */
@@ -19,7 +27,15 @@
     }
 
     /* -------------------------------------------------------------------------
-                         GLOBAL BASE Links & Buttons
+                         GLOBAL BASE Project Card
      ------------------------------------------------------------------------- */
 
+
+}
+
+@layer components {
+  .project-card {
+    /* Notice "group" has been completely removed from this line */
+    @apply flex flex-col bg-slate-900/40 rounded-3xl overflow-hidden border border-slate-800/80 hover:border-slate-700 transition-all duration-300;
+  }
 }
