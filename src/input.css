@@ -3,39 +3,65 @@
 
 @layer base {
 
-    
-    /* -------------------------------------------------------------------------
+
+  /* -------------------------------------------------------------------------
                          GLOBAL BASE Body tag class
      ------------------------------------------------------------------------- */
-    body {
+  body {
     @apply bg-slate-900 text-slate-100 antialiased font-sans;
   }
-    
-    /* ==========================================================================
+
+  /* ==========================================================================
                           Global Base Typography
     ========================================================================== */
-    h1 {
+  h1 {
     @apply text-4xl font-extrabold mt-6 mb-6;
-    }
+  }
 
-    h2 {
+  h2 {
     @apply text-3xl font-bold mt-5 mb-5;
-    }
+  }
 
-    h3 {
+  h3 {
     @apply text-2xl font-bold mt-5 mb-5;
+  }
+
+  /* -------------------------------------------------------------------------
+                         GLOBAL BASE anchor tag
+     ------------------------------------------------------------------------- */
+  /* Target links inside main text containers like articles or paragraphs */
+  .prose a,
+  main p a {
+    color: var(--color-blue-600);
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-blue-200);
+    transition-property: color, text-decoration-color;
+    transition-duration: 200ms;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-blue-800);
+      text-decoration-color: var(--color-blue-800);
     }
 
-    /* -------------------------------------------------------------------------
-                         GLOBAL BASE Project Card
-     ------------------------------------------------------------------------- */
-
-
+    /* Clean, accessible focus ring for keyboard navigation */
+    &:focus-visible {
+      outline: 2px solid var(--color-blue-600);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
 }
 
 @layer components {
+
+  /* -------------------------------------------------------------------------
+                         GLOBAL layer Component Project Card
+     ------------------------------------------------------------------------- */
   .project-card {
     /* Notice "group" has been completely removed from this line */
-    @apply flex flex-col bg-slate-800 rounded-3xl overflow-hidden border  border-slate-500 hover:border-slate-700 transition-all duration-300;
+    @apply flex flex-col bg-slate-800 rounded-3xl overflow-hidden border border-slate-500 hover:border-slate-700 transition-all duration-300;
   }
 }
