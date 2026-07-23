@@ -111,22 +111,22 @@
 
                         <!-- Slide 9 -->
                             <div class="min-w-full h-full flex justify-center items-center">
-                            <img src="assets/ovulation.webp" alt="Slide 3" class="w-full h-full object-cover">
+                            <img src="assets/ovulation.webp" alt="Slide 3" class="h-full w-auto object-contain">
                             </div>
 
                         <!-- Slide 10 -->
                             <div class="min-w-full h-full flex justify-center items-center">
-                            <img src="assets/skull-top.png" alt="Slide 3" class="w-full h-full object-cover">
+                            <img src="assets/skull-top.png" alt="Slide 3" class="h-full w-auto object-contain">
                             </div>
 
                         <!-- Slide 10 -->
                             <div class="min-w-full h-full flex justify-center items-center">
-                            <img src="assets/skull-muscle-masseter.webp" alt="Slide 3" class="w-full h-full object-cover">
+                            <img src="assets/skull-muscle-masseter.webp" alt="Slide 3" class="h-full w-auto object-contain">
                             </div>
 
                         <!-- Slide 11 -->
                             <div class="min-w-full h-full flex justify-center items-center">
-                            <img src="assets/skull-animation.gif" alt="Slide 3" class="w-full h-full object-cover">
+                            <img src="assets/skull-animation.gif" alt="Slide 3" class="h-full w-auto object-contain">
                             </div>
 
                         <!-- Slide 12 -->
@@ -260,31 +260,7 @@
                 </div>
             </footer>
 
-            <script>const track = document.getElementById('carousel-track');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const slides = Array.from(track.children);
-
-let currentIndex = 0;
-
-function updateCarouselPosition() {
-  // Calculates the shift percentage (e.g., Index 1 shifts -100%, Index 2 shifts -200%)
-  const amountToMove = currentIndex * -100;
-  track.style.transform = `translateX(${amountToMove}%)`;
-}
-
-nextBtn.addEventListener('click', () => {
-  // If at the end, loop back to the first slide, otherwise advance
-  currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-  updateCarouselPosition();
-});
-
-prevBtn.addEventListener('click', () => {
-  // If at the beginning, loop to the last slide, otherwise go back
-  currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-  updateCarouselPosition();
-});
-</script>
+    <script src="../../javascript/my.js"></script>
 
 </body>
 </html>
