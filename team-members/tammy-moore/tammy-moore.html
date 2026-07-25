@@ -56,20 +56,49 @@
     </header>
 
     <main>
-        <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc] text-[#0f172a]">
-  <!-- Section Title Area -->
-            <div class="flex items-center justify-center">
-                <img
-                    src="../tammy-moore/tammy.png" 
-                    alt="Tammy Moore" 
-                    class="w-1/3 h-auto "
-                />
-            </div>
-            <h1 class="text-center">TAMMY MOORE</h1>
-            
-        <div class="flex flex-col md:flex-row md:items-center justify-between mb-12"></div>
 
-        <!--  Carousel  -->
+        <!-- Team Member version 1 -->
+        <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc] text-[#0f172a]">
+  
+            <div class="flex items-center justify-center p-10">
+                <div  class="flex items-center justify-center">
+                    <img
+                        src="../tammy-moore/tammy.png" 
+                        alt="Tammy Moore" 
+                    />
+                </div>
+                <div class="max-w-2/3">
+                    <h1>TAMMY MOORE</h1>
+                    <p>Visual and Interaction Designer</p>
+                    <p>Characters with personality. Environments with atmosphere. Learning experiences that teach through story and play rather than through instruction and assessment. I've been doing this for over two decades — first as an illustrator, then as a visual designer, then as an interactive developer, and now as all three at once.</p>
+
+                    <p>The K-12 work you'll find here was built through my educational non-profit, Virtual Homeschool Group, serving 4,500 to 5,000 students annually. I own it and share it freely under Creative Commons licensing because that's what it was always for — giving students something genuinely worth engaging with.</p>
+
+                    <p>tools have evolved continuously. The philosophy hasn't. Whether I'm designing a science simulation, animating a character, or building puzzle logic for a game-based lesson, the question is always the same: does this feel alive? Does it make someone lean in?</p>
+                </div>
+            </div>
+            
+            <!-- Teaqm Member Version 2-->
+            <div class="p-10">
+                <div class="flex items-center justify-center">
+                    <img
+                        src="../tammy-moore/tammy.png" 
+                        alt="Tammy Moore" 
+                        class="w-1/3 h-auto "
+                    />
+                </div>
+                <h1 class="text-center">TAMMY MOORE</h1>
+                <p>Characters with personality. Environments with atmosphere. Learning experiences that teach through story and play rather than through instruction and assessment. I've been doing this for over two decades — first as an illustrator, then as a visual designer, then as an interactive developer, and now as all three at once.</p>
+
+                <p>The K-12 work you'll find here was built through my educational non-profit, Virtual Homeschool Group, serving 4,500 to 5,000 students annually. I own it and share it freely under Creative Commons licensing because that's what it was always for — giving students something genuinely worth engaging with.</p>
+
+                <p>tools have evolved continuously. The philosophy hasn't. Whether I'm designing a science simulation, animating a character, or building puzzle logic for a game-based lesson, the question is always the same: does this feel alive? Does it make someone lean in?</p>
+            </div>
+
+
+            <!--  Carousel  -->
+            <div class="p-10">
+                <h2>Game/Interaction Art by Tammy Moore</h2>
                     <!-- Main Container: Fixed height, dynamic width based on content -->
                     <div class="relative h-100 md:h-125 max-w-5xl mx-auto overflow-hidden rounded-xl bg-black shadow-lg">
       
@@ -175,19 +204,383 @@
                         ➜ <!-- Replace with right arrow icon -->
                         </button>
                     </div>
-                
+                </div>
+        </div>
+
+            
+        <!-- Search / Filter Placeholder Block (Inspired by the bright orange/white design) -->
+    <section class="bg-[#2663eb] rounded-3xl p-10 mb-12 shadow-lg">
+      <h2 class="text-white text-xl font-bold mb-4">Selected Articles by Tammy</h2>
+      <div class="relative">
+        <input type="text" placeholder="Search articles, videos, and topics..." class="w-full bg-white text-gray-800 placeholder-gray-400 rounded-full py-4 px-6 focus:outline-none shadow-inner" />
+      </div>
+      <div class="p-10">
+        <h3>Filter by Topic</h3>
+        <ul class="flex flex-wrap gap-2">
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            art design
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            eddtechTammy
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            gamedesign
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            gamedev
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            highered
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            k12
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            science
+          </li>
+          <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+            web
+          </li>
+        </ul>
+      </div>
+      </section>
+            <!-- Content Grid Section -->
+    <section>
+      <h2 class="text-2xl font-extrabold text-slate-900 mb-8">Selected Articles by Tammy</h2>
+      
+      <!-- Responsive Tailwind Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Game Development by Tammy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <article class="project-card group">
+          <!-- Simulated Game Thumbnail / Image Container -->
+            <div class="aspect-video relative overflow-hidden flex items-center justify-center">
+              <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+              <!-- Top Left Badge -->
+              <span class="absolute top-4 left-4 bg-slate-800 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full text-slate-200">
+              Featured
+              </span>
+            </div>
+
+            <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Tammy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3 class="text-slate-300">
+              Game Development
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Peer into the process we do to work with clients and our internal team members to create a game.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Timothy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Timothy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3 class="text-slate-300">
+              Speed Sketch: Title
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              What makes a game, course, or webpage engaging is the interaction between the user and the content. In this article, you will learn how we approach interaction design.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Zachary Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Zachary Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3 class="text-slate-300">
+              Chemicus
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              To make a game something more than just entertainment, the learning objectives need to be woven into the game mechanics.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Timothy Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Timothy Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3 class="text-slate-300">
+              Building Full Year High School Science Courses
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Quality testing involves testing the game play on multiple devices.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Gregory Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+            
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Gregory Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+
+            <h3 class="text-slate-300">
+              AI and VS Code
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Full Year K-12 Marine Biology Course as an Immersive Game
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!--                   Card -  Interaction Design by Gregory Moore                 -->
+        <!-- ------------------------------------------------------------------------- -->
+        <article class="project-card group">
+          
+          <!-- Card Thumbnail Area (Using an image) -->
+          <div class="w-full aspect-video overflow-hidden rounded-t-3xl">
+            
+            <img 
+                src="../../assets/gamedev.png" 
+                alt="Blog post cover" 
+                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+        </div>
+          <!--  Card body        -->
+            <div class="p-8 flex-1 flex flex-col justify-between">
+                            
+              <!-- Author and Date -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Added 'flex justify-center' to middle div -->
+                  <div class="max-w-25 flex justify-center">
+                    <a href="team-members/tammy-moore/tammy-moore.html">
+                      <img
+                        src="../../team-members/tammy-moore/tammy.png" 
+                        alt="Tammy Moore"
+                        class="block mx-auto"
+                     />
+                    </a>
+                  </div>
+                <div>
+            </div>
+            <p class="text-xs font-semibold text-slate-300 uppercase tracking-widest"><span class="text-xs font-bold uppercase tracking-wider text-orange-200">Gregory Moore</span> <span>•</span> <span>July 21, 2026</span></p>
+                                
+            <h3 class="text-slate-300">
+              Higher Ed
+            </h3>
+
+            <p class="text-slate-200 text-sm leading-relaxed">
+              Where is the organization heading.
+            </p>
+                            
+
+            <!-- Explore Link -->
+            <div class="mt-4 pt-6 border-t border-slate-800/60">
+              <a href="content-hub/game-development/game-development.html" class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-orange-400 transition-colors">
+                Read Article 
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+        </div>
+
+        
 
 
 
 
+        
 
-
-        <div class="p-10">  
-        <p>I build things that feel alive.</p>
-        <p>Characters with personality. Environments with atmosphere. Learning experiences that teach through story and play rather than through instruction and assessment. I've been doing this for over two decades — first as an illustrator, then as a visual designer, then as an interactive developer, and now as all three at once.</p>
-        <p>The K-12 work you'll find here was built through my educational non-profit, Virtual Homeschool Group, serving 4,500 to 5,000 students annually. I own it and share it freely under Creative Commons licensing because that's what it was always for — giving students something genuinely worth engaging with.</p>
-        <p> tools have evolved continuously. The philosophy hasn't. Whether I'm designing a science simulation, animating a character, or building puzzle logic for a game-based lesson, the question is always the same: does this feel alive? Does it make someone lean in?</p>
-
+        <div class="hidden">
         <p><a href="ttps://edutechtammy.github.io/strata-order-game/">Strata Order Game</a></p>
         <iframe 
             src="https://edutechtammy.github.io/strata-order-game/" 
@@ -240,6 +633,7 @@
             style="border: none;" 
             title="Lithium Battery Charge/Discharge">
         </iframe>
+        </div>
 
 
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-900  space-y-8">
