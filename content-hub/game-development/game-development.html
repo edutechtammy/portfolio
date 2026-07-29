@@ -55,67 +55,80 @@
         </div>   
     </header>
     <main class="max-w-7xl mx-auto px-6 py-12">
+        <article>
+            <!-- *************************************  -->
+            <!-- Setting the entire Article background  -->
+            <!-- *************************************  -->
+            <div class="bg-slate-900 rounded-3xl overflow-hidden  flex flex-col border border-slate-300 text-slate-300">  
+                <div class="max-w-7xl mx-auto px-6 py-16 bg-slate-900"> 
 
-        
-
-        
-
-        <article class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100 text-[#0f172a]">
-            <!--  Hero Image will go here  -->               
-
-            <div class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc]">
-                <!--  Topic labels will go here  -->
-                  <ul class="flex flex-wrap gap-2">
-                    <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
-                    gamedesign
-                    </li>
-                    <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
-                    gamedev
-                    </li>
-                </ul>
-          
-                <h1 class=" text-slate-900 text-4xl md:text-5xl font-extraboldtracking-tight mb-4">
+                    
+                <!-- *************************************  -->
+                <!--                Title                   -->
+                <!-- *************************************  -->
+                <h1 class=" text-slate-300 text-4xl md:text-5xl font-extraboldtracking-tight mb-4">
                 Game Development
                 </h1>
-                
-                <p>For the past 18 years, we’ve been refining our abilities, expertise, and Agile approach to game development, consistently delivering captivating and high-quality games while adhering to deadlines and budgets. But how do we do it? Here’s an overview of our methodology.</p>
-                <p>To start, the graphic below shows a timeline of our comprehensive production process. Please note that the graphic shows an example and that the number of sprints in a given release may vary due to the distinct scope of each project.</p>
+
+                <!-- *************************************  -->
+                <!--        Topic Labels Section            -->
+                <!-- *************************************  -->
+                <div class="py-4">
+                    <ul class="flex flex-wrap gap-2">
+                        <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+                        gamedesign
+                        </li>
+                        <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+                        gamedev
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- *************************************  -->
+                <!--          Introduction Section          -->
+                <!-- *************************************  -->
+                <p class="py-2">For the past 18 years, we’ve been refining our abilities, expertise, and Agile approach to game development, consistently delivering captivating and high-quality games while adhering to deadlines and budgets. But how do we do it? Here’s an overview of our methodology.</p>
+                <p class="py-2">To start, the graphic below shows a timeline of our comprehensive production process. Please note that the graphic shows an example and that the number of sprints in a given release may vary due to the distinct scope of each project.</p>
                 <div class="flex justify-center items-center p-10">
                     <img 
                         src="assets/scrum/0-scrum.png" 
                         alt="Blog post cover" class="w-400 h-auto"
                     />
                 </div>
-                <p>Now that you’ve seen an overview, let’s cover each phase of a project in more detail!</p>
 
                 
-            
-                <h2>Initiation</h2>
-                <p>Production and Project Management Team</p>
-                <p>We initiate each project with a 2-day kickoff period, bringing together all stakeholders to establish a solid foundation for our collaboration. During this kickoff, we leverage your specialized knowledge, your business model, and your grasp of your target audience to enhance the implementation of our effective game development practices. Furthermore, this period allows for discussions on the technical strategy and the refinement of team interaction preferences.</p>
-                <div class="flex justify-center items-center p-10">
-                <img 
-                    src="assets/scrum/sprints/01-initiation-sprint/01-initiation.png" 
-                    alt="Design Document Icon" 
-                     class="w-48 h-auto"
-                />
-                </div>
-                <p>At the contract level, we will document a specific set of Release Criteria; the mutually agreed-upon conditions needed for a Release to be Accepted. The formal Acceptance process for each Release will be detailed in each Statement of Work and will be facilitated using Jira, an industry-leading online project management and collaboration tool that allows us to document and track all Release Criteria and development tasks. Clients have access to Jira during implementation so that they have up-to-the-minute insight into our progress at all times. We’ll formally meet every two weeks for a Sprint review, during which we’ll discuss progress to date. Our teams are also available for adhoc meetings and communications on a daily basis. See below for details on the capabilities we use most in Jira as well as information about how we use the information generated by Jira to manage each project.</p>
-                <h3>Statement of Work (SOW)</h3>
+                <!-- *************************************  -->
+                <!--          Initiation Section            -->
+                <!-- *************************************  -->
+                <section>
 
-                <p>"SOW" refers to a Scope of Work—the foundational project management document that outlines a game's timeline, budget, and deliverables. In game development, an SOW defines exactly what the studio will build and ensures transparency between the studio and the client.</p>
+                    <h2>Initiation</h2>
 
+                    <p>Production and Project Management Team</p>
+                    <p>We initiate each project with a 2-day kickoff period, bringing together all stakeholders to establish a solid foundation for our collaboration. During this kickoff, we leverage your specialized knowledge, your business model, and your grasp of your target audience to enhance the implementation of our effective game development practices. Furthermore, this period allows for discussions on the technical strategy and the refinement of team interaction preferences.</p>
+                    <div class="flex flex-col md:flex-row items-center gap-6"> <!-- Indents over to make the subsections more obvious as subsections -->
+                        <img 
+                            src="assets/scrum/sprints/01-initiation-sprint/01-initiation.png" 
+                            alt="Design Document Icon" 
+                            class="w-70 h-auto"
+                        />
+                        <p>At the contract level, we will document a specific set of Release Criteria; the mutually agreed-upon conditions needed for a Release to be Accepted. The formal Acceptance process for each Release will be detailed in each Statement of Work and will be facilitated using Jira, an industry-leading online project management and collaboration tool that allows us to document and track all Release Criteria and development tasks. Clients have access to Jira during implementation so that they have up-to-the-minute insight into our progress at all times. We’ll formally meet every two weeks for a Sprint review, during which we’ll discuss progress to date. Our teams are also available for adhoc meetings and communications on a daily basis. See below for details on the capabilities we use most in Jira as well as information about how we use the information generated by Jira to manage each project.</p>
+                    </div> <!-- END Indents over to make the subsections more obvious as subsections -->
+                    
+                    <h3>Statement of Work (SOW)</h3>
+
+                    <p>"SOW" refers to a Scope of Work—the foundational project management document that outlines a game's timeline, budget, and deliverables. In game development, an SOW defines exactly what the studio will build and ensures transparency between the studio and the client.</p>
                 
-                <h3>Design Document (DD)</h3>
+                    <h3>Design Document (DD)</h3>
                 
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img 
-                        src="assets/scrum/design-document.png" 
-                        alt="Design Document Icon" class="w-70 h-auto"
-                    />
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <img 
+                            src="assets/scrum/design-document.png" 
+                            alt="Design Document Icon" class="w-70 h-auto"
+                        />
                     <div>
-                        <p>The Design Document is a central reference roadmap rather than a lengthy detailed document. It is used to track specific features and establish a shared vision between the development team and client.</p>
-                    </div>
+                    <p>The Design Document is a central reference roadmap rather than a lengthy detailed document. It is used to track specific features and establish a shared vision between the development team and client.</p>
+                </div>
                 </div>
                 <p>Upon entering the development phase, we operate within milestones, grouped into phases: Discovery, Alpha, Prototype, MVP (Minimally Viable Product), Beta, and Gold. Biweekly, formal video conferences are held with clients to assess progress over the last fortnight and strategize for the upcoming sprint. In addition to these structured meetings, our team members and clients engage in frequent ad-hoc communication.</p>
                 <p>Discovery. During Discovery, we explore product considerations such as the  product vision, the target audience, the objectives the standards, assessment needs, and external requirements</p>
@@ -126,8 +139,17 @@
                 <p><b>Art & Audio Style</b>: Early visual and audio concepts, often paired with accompanying concept art and wireframes.</p>
                 <p><b>Basic Story Outline</b>: A summary of the narrative (if applicable to the specific project).</p>
                 <p><b>Production Plan</b>: Basic budget outlines and timeframes for development.</p>
-                <h3>The Development Process - Milestones</h3>
-                
+
+
+                <!-- ***************************  -->
+                <!--   THE DEVELOPMENT PROCESS    -->
+                <!-- ***************************  -->
+
+                <h2>The Development Process - Milestones</h2>
+                <img 
+                        src="assets/scrum/Role_Relationships.png" 
+                        alt="Design Document Icon" class="w-4 h-auto"
+                    />
 
                 <p>By the time we reach the Alpha stage, our goal is to present a rudimentary playable version showcasing the primary game features. This phase involves internal play testing with our team, assessment by the client's group, and input from user testers within the target demographic. Given its early developmental status, the Alpha play test often identifies areas for enhancement. We swiftly work on these areas to integrate the feedback into future sprints.</p>
 
@@ -180,6 +202,7 @@
                 
             
             </section>
+            </div> <!-- END Setting the entire Article background  -->
         </article>
     </main>
     <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">
