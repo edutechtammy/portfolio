@@ -9,249 +9,309 @@
 </head>
 <body>
 
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo / Brand -->
-                <a href="index.html" class="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200">
-                    <!-- Squiggle Icon (A nod to Filament's logo) -->
-                    <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center font-bold text-white text-xl">
-                    ~
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-extrabold tracking-tight text-white uppercase leading-tight">
-                        EduTech<span class="text-orange-500">Tammy</span>
-                        </span>
-                        <span class="text-xs text-slate-400 tracking-wide">
-                        Immersive Learning Designer
-                        </span>
-                    </div>
-                </a>
+  <!-- ************************************ -->
+  <!--               Header                 -->
+  <!-- ************************************ -->
 
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800"> 
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!--  Styling for the row  -->
+      <div class="flex items-center justify-between h-20">   <!--  Whole row Flex positioning  -->
+        <!-- Logo / Brand -->
+        <a href="index.html" class="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200">
+          <!-- Squiggle Icon (A nod to Filament's logo) -->
+          <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center font-bold text-white text-xl">
+          ~
+          </div>
+          <div class="flex flex-col">
+              <span class="text-xl font-extrabold tracking-tight text-white uppercase leading-tight">
+              EduTech<span class="text-orange-500">Tammy</span>
+              </span>
+              <span class="text-xs text-slate-400 tracking-wide">
+              Immersive Learning Designer
+              </span>
+          </div>
+        </a> <!--  END Logo section left side -->
 
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
-                    <a href="portfolio.html" class="text-slate-300 hover:text-white transition-colors">Portfolio</a>
-                    <a href="services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
-                    <a href="about.html" class="text-orange-500 hover:text-orange-400 transition-colors">About</a>
-                    <a href="content-hub.html"  class="text-slate-300 hover:text-white transition-colors">Content-Hub</a>
-                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors">Contact</a>
-                    
-                    <!-- CTA Button -->
-                    <a href="contact.html" class="bg-orange-600 hover:bg-orange-500 text-white px-5 py-2.5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20">
-                        Start a project
-                    </a>
-                </nav>
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+            <a href="portfolio.html" class="text-slate-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
+            <a href="about.html" class="text-orange-500 hover:text-orange-400 transition-colors">About</a>
+            <a href="content-hub.html"  class="text-slate-300 hover:text-white transition-colors">Content-Hub</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+            
+            <!-- CTA Button -->
+            <a href="contact.html" class="bg-orange-600 hover:bg-orange-500 text-white px-5 py-2.5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20">
+                Start a project
+            </a>
+        </nav>
 
-                <!-- Mobile Menu Button (Keep it visual for now; you can add JS logic later) -->
-                <div class="md:hidden">
-                    <button class="text-slate-400 hover:text-white focus:outline-none p-2">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
-            </div>    
-        </div>   
-    </header>
-    <main>
-
-        <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc]">
-  <!-- Section Title Area -->
-  <div class="flex flex-col md:flex-row md:items-center justify-between mb-12">
-    <div class="text-[#0f172a]">
-      <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
-        Our team
-      </h1>
-      <p class="text-gray-600 leading-relaxed">
-        We're an interdisciplinary group of designers, developers, artists, learning scientists, and producers united by a shared mission: proving that learning should always be playful. Together, we've spent 20 years creating educational experiences that improve lives across every platform, subject, and age group.</p>
-
-      <h2>Production and Project Management</h2>
-      <p>At Filament Games, our approach to project management emphasizes communication and full transparency. At the contract level, we will document a specific set of Release Criteria; the mutually agreed-upon conditions needed for a Release to be Accepted. The formal Acceptance process for each Release will be detailed in each Statement of Work and will be facilitated using Jira, an industry-leading online project management and collaboration tool that allows us to document and track all Release Criteria and development tasks. Clients have access to Jira during implementation so that they have up-to-the-minute insight into our progress at all times. We’ll formally meet every two weeks for a Sprint review, during which we’ll discuss progress to date. Our teams are also available for adhoc meetings and communications on a daily basis. See below for details on the capabilities we use most in Jira as well as information about how we use the information generated by Jira to manage each project.</p>
-
-      <h2>Visual & Interaction Designer Team</h2>
-      <p>Each development team at Filament has a dedicated visual interaction designer who is responsible for designing the look and feel of each project. They also serve as the technical liaison between programmers and the illustration team. This role focuses on UI/UX design, visual aesthetics, and user interaction. Visual & Interaction Designers build the interface, art style, and UX flow of how the player sees and interacts with the screens. The visual interaction team is constantly iterating towards usability, clarity and quality in all player interactions. They specialize in creating experiences that eliminate unnecessary complexity, reduce the number of steps it takes to perform any given function, and reduce on-screen clutter so that the player has the tools and visual information they need to succeed.</p>
-      <p><b>Focus Area:</b> How the game actually plays, rules/systems design, and aligning gameplay with educational objectives.</p>
-      <b>Key Responsibilities:</b>
-          <ul class="list-disc list-inside space-y-2 pl-5">
-            <li>Creating intuitive, polished user interfaces (UI) and artistic visual assets.</li>
-            <li>Designing wireframes, navigation flows, and user experiences (UX) across extended reality (XR) or web platforms.</li>
-            <li>Ensuring visual aesthetics are clean, engaging, and aligned with brand or project goals.</li>
-          </ul>
-        
-      <h2>Game Designer Team</h2>
-      <p>This role focuses on gameplay mechanics, systems, learning design, and core interactive concepts. Game Designers build the rules, systems, and mechanics of how the game plays and teaches.</p>
-        <p><b>Focus Area:</b> How the game or interactive software looks, feels, and navigates.</p>
-          <b>Key Responsibilities:</b>
-          <ul class="list-disc list-inside space-y-2 pl-5">
-            <li>Designing game mechanics, systems, rules, and world-building.</li>
-            <li>Blending educational subject matter into playful, engaging core gameplay.</li>
-            <li>Deconstructing and mashing up game genres to match client needs and learning goals.</li>
-          </ul>
-        
-      <h2>Game Art (Illustration and 3D Modeling) Team</h2>
-      <p>The illustration team is used as a flexible resource across all projects. They are allocated to apply their breadth of styles and skill sets to each project in the studio as illustration demands rise and fall. Our game art team is broadly versed in all modes and styles of digital art, from retro pixel art to custom fully-rigged 3D models. With thoughtful considerations towards tone, mood, age range, and subject matter accuracy, our illustrators and 3D artists work diligently to ensure a pleasing aesthetic experience that suits your content, audience and budget.</p>
-
-      <h2>Web Development Team</h2>
-      <p>Filament’s web development team specializes in taking your project online. Composed of experts in graphic design, front end web design, and back end web development and infrastructure, this team works flexibly across browsers and platforms to create a web experience that is elegant, usable, and intuitive. We work primarily in Wordpress and Drupal, and are versed in front end frameworks including Angular, React, and Vue, as well as front end languages including Typescript, and Javascript. For back end web work, we specialize in FastAPI, Flask, Django, PHP, Node, and Javascript. Our web development team has a long track record of shipping web-based projects that support the educational and impact goals of our clients. Because we staff back end, front end, and graphic design specialists, our clients benefit from end-to-end web development services that can cover everything from nuts-and-bolts SQL database implementation to flashy, graphics-rich progressive web apps. Fluent in mobile and browser technologies, our web team can also work in tandem with our game developers to create and integrate the web-based components of your game project.</p>
-
-      <h2>Sound Team</h2>
-      <p>Our Sound team provides custom voice acting, narration, sound effects, and soundtrack compositions. This team also provides video production support for deliverables like in-game cinematics and promotional trailers. Filament provides comprehensive sound design and sound effect services. We produce songs in a vast variety of styles to fit the aesthetic of any game. Clients benefit from this capability by receiving wholly-owned custom content that does not require any third-party rights management.</p>
-      
-      <h2>Team Members</h2>
-    </div>
-  </div>
-
-  <!-- Team Cards Grid (6 Columns/Cards Layout) -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Mobile Menu Button (Keep it visual for now; you can add JS logic later) -->
+        <div class="md:hidden">
+            <button class="text-slate-400 hover:text-white focus:outline-none p-2">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div> <!-- END Mobile Menu Button (Keep it visual for now; you can add JS logic later) -->
+      </div>  <!--  END Whole row Flex positioning  -->  
+    </div> <!-- END Styling for the row  -->  
+  </header>
     
-    <!-- Member Card John -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <!-- Avatar Frame -->
+  <main>
+
+    
+
+    <div class="max-w-7xl mx-auto px-6 py-16 bg-[#f4fafc] text-[#0f172a]"> <!-- Styling for the whole content section  -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-12"> <!--  Flex   -->
+
+        <!-- ************************************ -->
+        <!--         Team Descriptions            -->
+        <!-- ************************************ -->
+
+
+        <section> <!--  Team Description Section   -->
+          <h1>
+            Team Descriptions
+          </h1>
+
+          <p>
+            We're an interdisciplinary group of designers, developers, artists, learning scientists, and producers united by a shared mission: proving that learning should always be playful. Together, we've spent 20 years creating educational experiences that improve lives across every platform, subject, and age group.</p>
+            <!-- END Page Introduction -->
+
+          <h2>Production and Project Management</h2>
+          <p>At Filament Games, our approach to project management emphasizes communication and full transparency. At the contract level, we will document a specific set of Release Criteria; the mutually agreed-upon conditions needed for a Release to be Accepted. The formal Acceptance process for each Release will be detailed in each Statement of Work and will be facilitated using Jira, an industry-leading online project management and collaboration tool that allows us to document and track all Release Criteria and development tasks. Clients have access to Jira during implementation so that they have up-to-the-minute insight into our progress at all times. We’ll formally meet every two weeks for a Sprint review, during which we’ll discuss progress to date. Our teams are also available for adhoc meetings and communications on a daily basis. See below for details on the capabilities we use most in Jira as well as information about how we use the information generated by Jira to manage each project.</p>
+
+          <h2>Visual & Interaction Designer Team</h2>
+          <p>Each development team at Filament has a dedicated visual interaction designer who is responsible for designing the look and feel of each project. They also serve as the technical liaison between programmers and the illustration team. This role focuses on UI/UX design, visual aesthetics, and user interaction. Visual & Interaction Designers build the interface, art style, and UX flow of how the player sees and interacts with the screens. The visual interaction team is constantly iterating towards usability, clarity and quality in all player interactions. They specialize in creating experiences that eliminate unnecessary complexity, reduce the number of steps it takes to perform any given function, and reduce on-screen clutter so that the player has the tools and visual information they need to succeed.</p>
+          <p><b>Focus Area:</b> How the game actually plays, rules/systems design, and aligning gameplay with educational objectives.</p>
+          <b>Key Responsibilities:</b>
+            <ul class="list-disc list-inside space-y-2 pl-5">
+              <li>Creating intuitive, polished user interfaces (UI) and artistic visual assets.</li>
+              <li>Designing wireframes, navigation flows, and user experiences (UX) across extended reality (XR) or web platforms.</li>
+              <li>Ensuring visual aesthetics are clean, engaging, and aligned with brand or project goals.</li>
+            </ul>
+            
+          <h2>Game Designer Team</h2>
+          <p>This role focuses on gameplay mechanics, systems, learning design, and core interactive concepts. Game Designers build the rules, systems, and mechanics of how the game plays and teaches.</p>
+            <p><b>Focus Area:</b> How the game or interactive software looks, feels, and navigates.</p>
+              <b>Key Responsibilities:</b>
+              <ul class="list-disc list-inside space-y-2 pl-5">
+                <li>Designing game mechanics, systems, rules, and world-building.</li>
+                <li>Blending educational subject matter into playful, engaging core gameplay.</li>
+                <li>Deconstructing and mashing up game genres to match client needs and learning goals.</li>
+              </ul>
+            
+          <h2>Game Art (Illustration and 3D Modeling) Team</h2>
+          <p>The illustration team is used as a flexible resource across all projects. They are allocated to apply their breadth of styles and skill sets to each project in the studio as illustration demands rise and fall. Our game art team is broadly versed in all modes and styles of digital art, from retro pixel art to custom fully-rigged 3D models. With thoughtful considerations towards tone, mood, age range, and subject matter accuracy, our illustrators and 3D artists work diligently to ensure a pleasing aesthetic experience that suits your content, audience and budget.</p>
+
+          <h2>Web Development Team</h2>
+          <p>Filament’s web development team specializes in taking your project online. Composed of experts in graphic design, front end web design, and back end web development and infrastructure, this team works flexibly across browsers and platforms to create a web experience that is elegant, usable, and intuitive. We work primarily in Wordpress and Drupal, and are versed in front end frameworks including Angular, React, and Vue, as well as front end languages including Typescript, and Javascript. For back end web work, we specialize in FastAPI, Flask, Django, PHP, Node, and Javascript. Our web development team has a long track record of shipping web-based projects that support the educational and impact goals of our clients. Because we staff back end, front end, and graphic design specialists, our clients benefit from end-to-end web development services that can cover everything from nuts-and-bolts SQL database implementation to flashy, graphics-rich progressive web apps. Fluent in mobile and browser technologies, our web team can also work in tandem with our game developers to create and integrate the web-based components of your game project.</p>
+
+          <h2>Sound Team</h2>
+          <p>Our Sound team provides custom voice acting, narration, sound effects, and soundtrack compositions. This team also provides video production support for deliverables like in-game cinematics and promotional trailers. Filament provides comprehensive sound design and sound effect services. We produce songs in a vast variety of styles to fit the aesthetic of any game. Clients benefit from this capability by receiving wholly-owned custom content that does not require any third-party rights management.</p>
+
+          
+
+        </section> <!-- End Text Color   -->
+      </div> <!--  END Flex   -->
+
+      <!-- ************************************ -->
+      <!--            Team Members              -->
+      <!-- ************************************ -->
       
-      <div class="w-64 h-64 overflow-hidden mb-6">
-        <img src="team-members/john-moore/john.png" alt="John Moore" class="w-full h-full object-cover" />
-      </div>
-      <!-- Info Layer -->
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">John Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Chief Executive Officer</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Believes that good gameplay and good learning are complementary rather than oppositional forces. Prior to founding Filament, worked as a teacher.
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/john-moore/john-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet him
-            </a>
-        </div>
-    </div>
+      <section> <!-- Team Member Section -->
 
-    <!-- Member Tammy -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <div class="w-64 h-64 overflow-hidden mb-6">
-        <img src="team-members/tammy-moore/tammy.png" alt="Tammy Moore" class="w-full h-full object-cover" />
-      </div>
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">Tammy Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Chief Creative Officer</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Tammy handles the initial Discovery & Scope of what the client's business/learning goals are and builds out a high-level project spec. Her experience with pedagogy & core experience design take the learning objectives and converts them into game mechanics, reward loops, and feedback systems rather than text or quizzes.</p>
-
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/tammy-moore/tammy-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet her
-            </a>
-        </div>
-    </div>
-
-    <!-- Member Gregory -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <div class="w-64 h-64 overflow-hidden mb-6">
-        <img src="team-members/gregory-moore/gregory.png" alt="Gregpry Moore" class="w-full h-full object-cover" />
-      </div>
+        <h2 class="text-slate-900">Team Members</h2>
+        <p class="pb-2">Our interdisciplinary team includes game designers, learning scientists, software developers, artists, animators, audio designers, producers, and marketers—all passionate about the power of playful learning.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"> <!-- Team Cards Grid (6 Columns/Cards Layout) -->
       
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">Gregory Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Chief Technology Officer</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Has decades of experience developing educational software and is credited on hundreds of math, science, and literacy games.
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/gregory-moore/gregory-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet him
-            </a>
-        </div>
-    </div>
+          <!-- Member Card John -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <!-- Avatar Frame -->
+            <div class="w-64 h-64 overflow-hidden mb-6">
+              <img src="team-members/john-moore/john.png" alt="John Moore" class="w-full h-full object-cover" />
+            </div>
+            <!-- Info Layer -->
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">John Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Chief Executive Officer</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Believes that good gameplay and good learning are complementary rather than oppositional forces. Prior to founding Filament, worked as a teacher.
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/john-moore/john-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet him
+                </a>
+            </div>
+          </div> <!--  End John's Card. -->
 
-    <!-- Member Melody -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <div class="w-64 h-64 overflow-hidden mb-6">
-        <img src="team-members/melody-moore/melody.png" alt="Melody Moore" class="w-full h-full object-cover" />
+          <!-- Member Tammy -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <div class="w-64 h-64 overflow-hidden mb-6">
+              <img src="team-members/tammy-moore/tammy.png" alt="Tammy Moore" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">Tammy Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Chief Creative Officer</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Tammy handles the initial Discovery & Scope of what the client's business/learning goals are and builds out a high-level project spec. Her experience with pedagogy & core experience design take the learning objectives and converts them into game mechanics, reward loops, and feedback systems rather than text or quizzes.</p>
+
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/tammy-moore/tammy-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet her
+                </a>
+            </div>
+          </div> <!-- END Tammy's Card -->
+
+          <!-- Member Gregory -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <div class="w-64 h-64 overflow-hidden mb-6">
+              <img src="team-members/gregory-moore/gregory.png" alt="Gregpry Moore" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">Gregory Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Chief Technology Officer</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Has decades of experience developing educational software and is credited on hundreds of math, science, and literacy games.
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/gregory-moore/gregory-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet him
+                </a>
+            </div>
+          </div> <!-- END Gregory's Card -->
+
+          <!-- Member Melody -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <div class="w-64 h-64 overflow-hidden mb-6">
+              <img src="team-members/melody-moore/melody.png" alt="Melody Moore" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">Melody Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Senior QA Analyst</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Assists in testing various projects and highly values the absolute joy and ultimate technical challenge in attempting to break things.
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/melody-moore/melody-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet her
+                </a>
+            </div>
+          </div> <!-- END Melody's Card -->
+
+          <!-- Member Timothy -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <div class="w-64 h-64 mb-6">
+              <img src="team-members/timothy-moore/timothy.png" alt="Timothy Moore" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">Timothy Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Interaction Designer</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Has had extensive experience designing in a number of digital industries. He is in constant pursuit of a well-thought-out interface.
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/timothy-moore/timothy-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet him
+                </a>
+            </div>
+          </div> <!-- End Timothy's Card -->
+
+          <!-- Member Zachary -->
+          <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <div class="w-64 h-64 overflow-hidden mb-6">
+              <img src="team-members/zachary-moore/zachary.png" alt="Zachary Moore" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-bold text-[#0f172a] mb-1">Zachary Moore</h3>
+            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Game Designer</p>
+            <p class="text-xs text-slate-500 leading-relaxed line-clamp-4">
+              Loves blending educational metrics and play into brand new digital experiences. His favorite thing is exploring a wide variety of topics.
+            </p>
+            <!-- Filament Style Rounded Button -->
+            <div class="mt-auto pt-6 w-full">
+                <a href="team-members/zachary-moore/zachary-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
+                Meet him
+                </a>
+            </div>
+          </div> <!-- End Zachary's Card -->
+
+        </div> <!-- END Team Cards Grid (6 Columns/Cards Layout) -->
+      </section> <!-- END Team Member Section -->
+
+
+      <!--  **********************************************  -->
+      <!--              Skill SEARCH SECTION                -->
+      <!--  **********************************************  -->  
+
+      <section class="bg-[#2663eb] rounded-3xl p-4 mb-5 mt-12 shadow-lg"> <!-- Skill SEARCH SECTION  -->
+        <h2 class="text-white font-bold mb-4">Filter Members by Skill Set</h2> 
+        <p>Filter team member by what teams they work with and by the sub skills within each team.</p>           
+              
+        <!--              Articles Search Tool                -->
+    
+        <h2 class="text-white text-xl font-bold mb-4">Search Skills by Member</h2>
+        <div class="relative">
+          <input type="text" placeholder="Search articles, videos, and topics..." class="w-full bg-white text-slate-800 placeholder-slate-400 rounded-full py-4 px-6 focus:outline-none shadow-inner" />
+        </div> <!-- END Articles Search Tool  -->
+
+        <!--          Filter Projects by Topics Tool                -->
+
+        <div class="p-10"> <!-- Filter Projects By Topic Outer div-->
+          <h3>Filter by Skill</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Game Art Team
+            </li>
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Game Designer Team
+            </li>
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Production and Project Management
+            </li>
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Sound Team
+            </li>
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Visual Design Team
+            </li>
+            <li class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-900">
+              Web Design Team
+            </li>
+          </ul>
+        </div>  <!-- END Filter Projects By Topic div-->
+      </section> <!-- END Skill SEARCH SECTION  -->
+    </div> <!-- END Styling for the content sections  -->
+
+  </main>
+
+  <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <!-- Left Side: Brand/Tagline -->
+          <div class="text-center md:text-left">
+              <p class="text-lg font-bold text-white">Let's build something together.</p>
+              <p class="text-sm text-slate-400 mt-1">Available for instructional design, development, and consulting contracts.</p>
+          </div>
+          <!-- Right Side: Action Links -->
+          <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-400">
+              <a href="mailto:teacher.tammy.moore@gmail.com" class="hover:text-orange-500 transition-colors">Email Me</a>
+              <a href="https://www.linkedin.com/in/tammy-moore-50733354/" class="hover:text-orange-500 transition-colors">LinkedIn</a>
+              <a href="https://profile.indeed.com/p/tammym-xmvoxc6" class="hover:text-orange-500 transition-colors">Indeed</a>
+              <a href="https://github.com/edutechtammy" class="hover:text-orange-500 transition-colors">GitHub</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Resume</a>
+          </div>
+        </div>
+
+        <!-- Bottom Copyright / Transition Link -->
+        <div class="mt-8 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 Tammy Moore. All rights reserved.</p>
+            <p class="hover:text-slate-400 transition-colors">Built with HTML & Tailwind CSS</p>
+        </div>
       </div>
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">Melody Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Senior QA Analyst</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Assists in testing various projects and highly values the absolute joy and ultimate technical challenge in attempting to break things.
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/melody-moore/melody-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet her
-            </a>
-        </div>
-    </div>
-
-    <!-- Member Timothy -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <div class="w-64 h-64 mb-6">
-        <img src="team-members/timothy-moore/timothy.png" alt="Timothy Moore" class="w-full h-full object-cover" />
-      </div>
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">Timothy Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Interaction Designer</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Has had extensive experience designing in a number of digital industries. He is in constant pursuit of a well-thought-out interface.
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/timothy-moore/timothy-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet him
-            </a>
-        </div>
-    </div>
-
-    <!-- Member Zachary -->
-    <div class="bg-white rounded-4xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
-      <div class="w-64 h-64 overflow-hidden mb-6">
-        <img src="team-members/zachary-moore/zachary.png" alt="Zachary Moore" class="w-full h-full object-cover" />
-      </div>
-      <h3 class="text-lg font-bold text-[#0f172a] mb-1">Zachary Moore</h3>
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Game Designer</p>
-      <p class="text-xs text-gray-500 leading-relaxed line-clamp-4">
-        Loves blending educational metrics and play into brand new digital experiences. His favorite thing is exploring a wide variety of topics.
-      </p>
-      <!-- Filament Style Rounded Button -->
-        <div class="mt-auto pt-6 w-full">
-            <a href="team-members/zachary-moore/zachary-moore.html" class="inline-block w-full border border-red-400 text-red-500 hover:bg-red-500 hover:text-white font-bold px-4 py-2 rounded-full text-xs transition duration-200">
-             Meet him
-            </a>
-        </div>
-    </div>
-
-  </div>
-</section>
-
-    </main>
-
-    <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-12">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                
-                        <!-- Left Side: Brand/Tagline -->
-                        <div class="text-center md:text-left">
-                            <p class="text-lg font-bold text-white">Let's build something together.</p>
-                            <p class="text-sm text-slate-400 mt-1">Available for instructional design, development, and consulting contracts.</p>
-                        </div>
-
-                        <!-- Right Side: Action Links -->
-                        <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-400">
-                            <a href="mailto:teacher.tammy.moore@gmail.com" class="hover:text-orange-500 transition-colors">Email Me</a>
-                            <a href="https://www.linkedin.com/in/tammy-moore-50733354/" class="hover:text-orange-500 transition-colors">LinkedIn</a>
-                            <a href="https://profile.indeed.com/p/tammym-xmvoxc6" class="hover:text-orange-500 transition-colors">Indeed</a>
-                            <a href="https://github.com/edutechtammy" class="hover:text-orange-500 transition-colors">GitHub</a>
-                            <a href="#" class="hover:text-orange-500 transition-colors">Resume</a>
-                        </div>
-
-                    </div>
-
-                    <!-- Bottom Copyright / Transition Link -->
-                    <div class="mt-8 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                        <p>&copy; 2026 Tammy Moore. All rights reserved.</p>
-                        <p class="hover:text-slate-400 transition-colors">Built with HTML & Tailwind CSS</p>
-                    </div>
-                </div>
-            </footer>
+  </footer>
 
 </body>
 </html>
