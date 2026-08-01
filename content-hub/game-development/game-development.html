@@ -204,10 +204,22 @@
 
                 <h3>Design Sprint: Game Design Phase</h3>
                 <p>Text</p>
-
+                <h3 class="flex justify-center items-center p-4">
+                    <img src="assets/scrum/Game Design Sprint.png"
+                        alt="Design Sprint: Design Spike Sprint Section Title"
+                        class="w-screen h-auto object-cover"
+                    />  
+                </h3>
+                <p>Text</p>
                 <!--   Design Sprint: Game Art Spike Phase   -->
 
-                <h3>Design Sprint: Game Art Spike Phase</h3>
+                
+                <h3 class="flex justify-center items-center p-4">
+                    <img src="assets/scrum/Art Spike Sprint.png"
+                        alt="Design Sprint: Art Spike Sprint Section Title"
+                        class="w-screen h-auto object-cover"
+                    />  
+                </h3>
                 <p>Game art can be static or animated, 2D or 3D. The process is a little different depending on which it will be.</p>
                 <p><b>2D Art</b></p>
                 <p>Animation starts internally with Motion Design. This involves the team sketching a concept of the final piece and creating basic animatics. These are used to identify the level of detail, timing, and the feeling the game should use to communicate the design goals effectively. Once established, the motion design is used for all pieces of animation in the game.</p>
@@ -229,7 +241,12 @@
 
                 <!--   Design Sprint: Wireframing Phase   -->
 
-                <h3>Design Sprint: Wireframing Phase</h3>
+                <h3 class="flex justify-center items-center p-4">
+                    <img src="assets/scrum/Wireframing Spike.png"
+                        alt="Design Sprint: Wireframing Phase Section Title"
+                        class="w-screen h-auto object-cover"
+                    />  
+                </h3>
                 <p>To bridge text concepts and production, Filament Games pairs their Game Design Document (GDD) with a separate, visual wireframe pipeline. We keep wireframes out of the main GDD text, using them instead as a sequential mockup deck to map user experience before writing any code. By using wireframes, we avoid issues such as a game artist creates graphics only to find out that they needed to be broken up into parts to facilitate animation. A developer builds out a feature only to find that the feature was intended to work in a different way.</p>
                 
                     <div class="flex justify-center items-center p-10">
@@ -250,7 +267,7 @@
                 <p><b>Core Components in a Wireframe</b></p>
                 <p>Every screen modeled in a wireframe deck requires specific structural elements to be useful for engineers and artists:</p>
                 <div class="pl-14">
-                <p><b>Layout Blocks</b>: Boxes that dictate the exact hierarchy and placement of UI elements, buttons, and instructional text areas.</p>
+                <p><b>Layout Blocks</b>: Boxes that dictate the exact hierarchy and placement of UI elements, buttons, and instructional text areas. Already thought goes in to prioritizing the most important elements.</p>
                 <p><b>Visual Placeholders</b>: Rough sketches or boxes indicating where gameplay feedback, timers, scores, or pedagogical meters will live.</p>
                 <p><b>Callout Labels</b>: Numbered circles or markers placed directly over UI elements to link the visual component to an explanatory note.</p>
                 <p><b>Functional Annotations</b>: A dedicated sidebar or bottom panel detailing exactly what happens when a user clicks a specific button (e.g., "Launches reward animation," "Saves state and routes to Level 2").</p>
@@ -258,7 +275,15 @@
 
                 <!--   Design Sprint: Architecture Phase   -->
                 
-                <h3>Design Sprint: Architecture Phase</h3>
+               
+                <div class="flex justify-center items-center p-4">
+                        <h3>
+                        <img src="assets/scrum/Architecture Spike.png"
+                        alt="Design Sprint: Architecture Spike Section Title"
+                        class="w-screen h-auto object-cover"
+                        />
+                        </h3>
+                    </div>
                 <p>Incorporating and managing all of the software required for HTML5’s full potential is a job in itself. For a package manager we use Node.js’s npm/pnpm + Vite / esbuild. We use these tools to encapsulate and sync source code to specific versions. As a studio we went with rendering to PixiJS, Phaser or WebGL2 / WebGPU. Based on past experience writing large Javascript projects, for more robust and scalable code we went with Typescript. All of our external data is stored as JSON.</p>
                 <p>At this point we have mature JS engines to chose from and no longer have to make our own. For 3D, Unity is our go-to engine.</p>
 
@@ -268,6 +293,15 @@
 
                 <h2>Alpha Stage - Feature Sprint</h2>
                <p>The design sprints are done for the time being and now the focus is on developing the features for the Alpha Release. This would be a subset of the features that would appear in the Beta and Gold Release. This is a code heavy phase where the interactions, player input, and player feedback is put into place.</p>
+
+               <div class="flex justify-center items-center p-4">
+                    <figure>
+                    <img 
+                    src="assets/scrum/sprints/03-feature-sprint/00-feature-sprint.png" alt="Design Sprint" class="w-96 h-auto"/>
+                    <figcaption>Text</figcaption>
+                    </figure>
+                </div>
+
                 <div class="flex justify-center items-center p-4">
                         <figure>
                             <img src="assets/scrum/Feature Sprints.png"
@@ -280,6 +314,43 @@
                         </figure>
                     </div>
                 <p>Just as in the design phases, each sprint is 2-weeks long and there is a testing sprint built in, this time at the last sprint. This is an in-house/stakeholder play test at this phase, not a play test where users are yet involved. That will happen at the next stage.</p>
+
+                <div class="flex justify-center items-center p-4">
+                    <h3>
+                        <img src="assets/scrum/Feature Sprint - Design.png"
+                        alt="Design Sprint: Architecture Spike Section Title"
+                        class="w-screen h-auto object-cover"
+                        />
+                    </h3>
+                </div>
+                <p>Text</p>
+                <div class="flex justify-center items-center p-4">
+                    <h3>
+                        <img src="assets/scrum/Code and Assets.png"
+                        alt="Feature Sprint: Code and Assets Section Title"
+                        class="w-screen h-auto object-cover"
+                        />
+                    </h3>
+                </div>
+                <p>Text</p>
+                <div class="flex justify-center items-center p-4">
+                    <h3>
+                        <img src="assets/scrum/Feature Sprint - Test and Tune.png"
+                        alt="Feature Sprint: Code and Assets Section Title"
+                        class="w-screen h-auto object-cover"
+                        />
+                    </h3>
+                </div>
+                <p>Some barriers are technical. Others arise from interaction design. Automated tools can confirm that a button exists and is labeled. They cannot determine whether a learner understands what to do with it under pressure. They cannot evaluate pacing, predict confusion, or detect when important cues are being missed due to sensory overload or UI complexity.</p>
+                <p><b>Accessibility</b></p>
+                <p>Meaningful accessibility testing involves asking:</p>
+                <div class="pl-14">
+                    <p>Can a low-vision player interpret key interface elements during fast-paced activities?</p>
+                    <p>Are input models consistent, discoverable, and supported across devices?</p>
+                    <p>Is essential information conveyed through multiple sensory channels?</p>
+                    <p>Can learners control the pace at which they receive instructions or feedback?</p>
+                </div>
+                <p>These questions can’t be answered by a browser extension or scan report. They require real-time observation, usability insight, and accessibility-informed QA.</p>
                 
                 <!-- ***************************  -->
                 <!--        Beta Stage            -->
