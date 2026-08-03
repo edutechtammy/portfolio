@@ -124,8 +124,49 @@
 
         <h2 class="text-slate-900">Team Members</h2>
         <p class="pb-2">Our interdisciplinary team includes game designers, learning scientists, software developers, artists, animators, audio designers, producers, and marketers—all passionate about the power of playful learning.</p>
+
+        <!-- Thumbnail container -->
+        <div class="p-4 bg-slate-200 text-center">
+          <p class="text-slate-900 mb-2">Click to see the organizational chart.</p>
+          <!--  Clickable thumbnail button -->
+            <button
+              type="button"
+              onclick="openOrgChartModal()"
+              class="w-full max-w-lg h-64 overflow-hidden rounded-lg shadow-md hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-slate-500">
+              <img src="assets/our-team.png"
+              alt="organization chart"
+              class="w-full h-full object-cover pointer-event-none"
+            />
+          </button>
+        </div>
+        <!-- 2. POP-UP MODAL (Hidden by default) -->
+        <div 
+          id="orgChartModal" 
+          class="fixed inset-0 z-50 hidden flex-col bg-black/80 backdrop-blur-sm p-4 md:p-8"
+        >
+          <!-- Modal Header / Controls -->
+          <div class="flex justify-between items-center text-white mb-2 z-10">
+            <span class="text-sm text-slate-300">Scroll to zoom • Drag to move</span>
+            <button 
+              onclick="closeOrgChartModal()" 
+              class="bg-white/10 hover:bg-white/20 text-white font-bold py-1 px-4 rounded-full transition"
+            >
+              Close ✕
+            </button>
+        </div>
+
+  <!-- Zoomable Container -->
+  <div class="relative flex-1 w-full h-full overflow-hidden flex items-center justify-center cursor-grab active:cursor-grabbing">
+    <img 
+      id="zoomableImg" 
+      src="assets/our-team.png" 
+      alt="Organizational Chart Full View" 
+      class="max-w-none transition-transform duration-75 ease-out select-none" 
+    />
+  </div>
+</div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"> <!-- Team Cards Grid (6 Columns/Cards Layout) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-8"> <!-- Team Cards Grid (6 Columns/Cards Layout) -->
       
           <!-- Member Card John -->
           <div class="bg-slate-900 rounded-4xl border border-slate-300 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
@@ -312,6 +353,59 @@
         </div>
       </div>
   </footer>
+
+  <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
+  <script>
+    let panzoomInstance = null;
+
+    function openOrgChartModal() {
+      const modal = document.getElementById('orgChartModal');
+      const img = document.getElementById('zoomableImg');
+
+      // Show modal
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      // Prevent background page from scrolling
+      document.body.style.overflow = 'hidden';
+
+      // Initialize Panzoom if not already initialized
+      if (!panzoomInstance) {
+        panzoomInstance = Panzoom(img, {
+          maxScale: 5,
+          minScale: 1,
+          contain: 'outside',
+        });
+
+        // Enable mouse wheel zooming
+        img.parentElement.addEventListener('wheel', panzoomInstance.zoomWithWheel);
+      }
+    }
+
+    function closeOrgChartModal() {
+      const modal = document.getElementById('orgChartModal');
+
+      // Hide modal
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+
+      // Restore background scrolling
+      document.body.style.overflow = '';
+
+      // Reset zoom state back to default
+      if (panzoomInstance) {
+        panzoomInstance.reset();
+      }
+    }
+
+    // Close modal when pressing the Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeOrgChartModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
