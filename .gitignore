@@ -10,5 +10,8 @@ tailwindcss
 # Local research and resources
 0-research/
 
+# Local Raw File Storage
+0-raw-assets/
+
 # Tailwind Practice
 tailwind-practice/
